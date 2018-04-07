@@ -19,8 +19,9 @@
 
 
 	<modules>
-		<module>jlink-test2-impl</module>
 		<module>jlink-test-assembly</module>
+		<module>jlink-hello-api</module>
+		<module>jlink-hello-impl</module>
 	</modules>
 
 	<build>

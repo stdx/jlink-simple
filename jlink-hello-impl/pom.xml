@@ -2,32 +2,20 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
+	
 	<parent>
 		<groupId>org.stdx</groupId>
 		<artifactId>jlink-test2</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
-	<artifactId>jlink-test-assembly</artifactId>
-	<packaging>jlink</packaging>
-
+	
+	<artifactId>jlink-hello-impl</artifactId>
+	
 	<dependencies>
 		<dependency>
+			<artifactId>jlink-hello-api</artifactId>
 			<groupId>${project.groupId}</groupId>
-			<artifactId>jlink-hello-impl</artifactId>
 			<version>${project.version}</version>
 		</dependency>
 	</dependencies>
-
-	<build>
-		<plugins>
-			<plugin>
-				<artifactId>maven-jlink-plugin</artifactId>
-				<extensions>true</extensions>
-				<configuration>
-					<!-- <compression>1</compression> -->
-				</configuration>
-			</plugin>
-		</plugins>
-	</build>
-
 </project>
